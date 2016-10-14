@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hangman</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="javascript/jquerry.min.js"></script>
+	<script type="text/javascript" src="javascript/wordbank.js"></script>
+	<script type="text/javascript" src="javascript/jquery.qrcode.js"></script>
+	<script type="text/javascript" src="javascript/clickLetter.js"></script>
+	<script type="text/javascript" src="javascript/game.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+document.onkeyup = function() {
+	window.location.replace('game.html');
+}
+
+</script>
+
+	<div id= 'container'>
+		<div id="header">
+			<p>Welcome to Hangman!<br/>
+			<b>Click any keyboard letter</b> to begin or:<br/><a href="index.html">Click here to start the game.</a>
+			</p>
+			<h1 id="WORD">____</h1>
+		</div>
+		<br />
+		<center><img id="main_img" src="images/hangman_1.png"></center>
+	</div>
+</body>
+</html>
